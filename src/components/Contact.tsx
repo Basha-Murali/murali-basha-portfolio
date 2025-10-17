@@ -76,6 +76,8 @@ const Contact = () => {
         </a>
       </motion.div>
 
+      {/* ✅ Divider line with white or gray accent */}
+      <div className="w-24 h-[2px] bg-gray-500 dark:bg-gray-300 mx-auto my-10 rounded-full" />
       {/* ✅ Quick Info + Quick Connect */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -110,7 +112,7 @@ const Contact = () => {
         </p>
 
         {/* Quick Connect */}
-        <p className="flex items-center justify-center gap-2 flex-wrap relative">
+        <p className="flex items-center justify-center gap-4 flex-wrap relative">
           ⚡ <span className="font-medium text-white">Quick Connect:</span>{" "}
           <a
             href="tel:+918309014761"
