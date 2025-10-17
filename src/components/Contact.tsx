@@ -112,7 +112,7 @@ const Contact = () => {
         </p>
 
         {/* Quick Connect */}
-        <p className="flex items-center justify-center gap-4 flex-wrap relative">
+        <p className="flex items-center justify-center gap-2 flex-wrap relative">
           ⚡ <span className="font-medium text-white">Quick Connect:</span>{" "}
           <a
             href="tel:+918309014761"
