@@ -9,7 +9,7 @@ const Hero = () => {
     >
       {/* 👇 Profile Image with hover spin animation */}
       <motion.img
-        src="public/icons/profile.jpg" // place your image inside /public
+        src="/icons/profile.jpg" // place your image inside /public
         alt="Murali Basha"
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
