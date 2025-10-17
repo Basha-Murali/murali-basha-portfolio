@@ -14,7 +14,7 @@ const About = () => (
     </motion.h3>
 
     {/* Content Container (same animation style as project cards) */}
-    <motion.div
+    <motion.p
       initial={{ scale: 0.9, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.6 }}
@@ -26,15 +26,16 @@ const About = () => (
     >
       <p className="text-gray-300 text-lg leading-relaxed">
         I’m a full-stack JavaScript developer specializing in building
-        responsive, high-performance web applications using{" "}
-        <span className="text-accent font-medium">React</span>,{" "}
+        responsive, high-performance web applications. Strong specialization in
+        backend development using{" "}
         <span className="text-accent font-medium">Node.js</span>,{" "}
         <span className="text-accent font-medium">Express</span>, and{" "}
-        <span className="text-accent font-medium">MongoDB</span>. I love
-        crafting efficient APIs, reusable components, and seamless user
+        <span className="text-accent font-medium">MongoDB</span>, with hands-on
+        experience in <span className="text-accent font-medium">React.js</span>.
+        I love crafting efficient APIs, reusable components, and seamless user
         experiences with modern frameworks and tools.
       </p>
-    </motion.div>
+    </motion.p>
   </section>
 );
 

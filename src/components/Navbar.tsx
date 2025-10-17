@@ -58,9 +58,11 @@ const Navbar: React.FC = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="text-xl font-bold text-[#3C873A]"
+          // className="text-xl font-bold text-[#3C873A]"
+          className="flex items-center space-x-2"
         >
-          Murali Basha
+          <span className="text-xl font-bold text-[#3C873A]">MB</span>
+          <span className="text-sm text-gray-300 tracking-wide">Portfolio</span>
         </motion.a>
 
         {/* ✅ Desktop Nav */}
