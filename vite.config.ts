@@ -3,13 +3,20 @@ import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 
 export default defineConfig({
-  root: ".", // 👈 tells Vite to treat ./ as root (what Vercel uses)
+  root: ".", // tells Vite ./ is root (Vercel default)
   plugins: [react()],
-  base: "./", // 👈 ensures relative paths in production
+  base: "./", // ensures correct asset paths
   build: {
     outDir: "dist",
     rollupOptions: {
-      input: resolve(__dirname, "index.html"), // 👈 absolute path fix for Vercel
+      // 👇 This line is key — explicitly point to your index.html
+      input: resolve(__dirname, "index.html"),
+    },
+  },
+  resolve: {
+    // 👇 Fix absolute imports like /src/main.tsx
+    alias: {
+      "/src": resolve(__dirname, "src"),
     },
   },
 });
