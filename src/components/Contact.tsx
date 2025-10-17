@@ -104,7 +104,7 @@ const Contact = () => (
       className="flex justify-center gap-6 text-3xl"
     >
       <a
-        href="https://github.com/iamroh192"
+        href="https://github.com/Basha-Murali"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-accent transition"
@@ -113,7 +113,7 @@ const Contact = () => (
       </a>
 
       <a
-        href="https://www.linkedin.com/in/muralibasha33"
+        href="https://www.linkedin.com/in/murali-basha-5b5586225/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-accent transition"
@@ -122,7 +122,7 @@ const Contact = () => (
       </a>
 
       <a
-        href="https://x.com/muralibasha33"
+        href="https://x.com/MuraliBasha"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-accent transition"
