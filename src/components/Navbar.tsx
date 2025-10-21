@@ -20,6 +20,14 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPos = window.scrollY + 150; // navbar offset
+      const bottomOfPage =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 50; // near bottom
+
+      if (bottomOfPage) {
+        setActiveSection("#contact");
+        return;
+      }
+
       for (const item of navItems) {
         const section = document.querySelector(item.href) as HTMLElement | null;
         if (
